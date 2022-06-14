@@ -16,9 +16,7 @@ _global_script_class_icons={
 
 config/name="Last Alive"
 run/main_scene="res://Network_setup.tscn"
-config/icon="res://icon (1).ico"
-config/macos_native_icon="res://icon (1).ico"
-config/windows_native_icon="res://icon (1).ico"
+config/icon="res://icon.png"
 
 [autoload]
 

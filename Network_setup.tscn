@@ -1,16 +1,18 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Base_font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Network_setup.gd" type="Script" id=2]
 [ext_resource path="res://UI.gd" type="Script" id=3]
+[ext_resource path="res://background.png" type="Texture" id=4]
 
 [node name="Network_setup" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 961, 553 )
+texture = ExtResource( 4 )
 
 [node name="Multiplayer_configure" type="Control" parent="."]
 anchor_right = 1.0
@@ -24,10 +26,15 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -267.5
-margin_top = -202.0
-margin_right = 267.5
-margin_bottom = -25.9999
+margin_left = -615.0
+margin_top = -62.0
+margin_right = -80.0
+margin_bottom = 114.0
+custom_colors/font_color_disabled = Color( 0.956863, 0.054902, 0.054902, 1 )
+custom_colors/font_color_focus = Color( 0.803922, 0.133333, 0.133333, 1 )
+custom_colors/font_color = Color( 0.815686, 0.0705882, 0.0705882, 1 )
+custom_colors/font_color_hover = Color( 0.929412, 0.0745098, 0.0745098, 1 )
+custom_colors/font_color_pressed = Color( 0.741176, 0.184314, 0.184314, 1 )
 custom_fonts/font = ExtResource( 1 )
 text = "Create Server"
 
@@ -36,26 +43,33 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -267.5
-margin_top = 24.0
-margin_right = 267.5
-margin_bottom = 200.0
+margin_left = 117.0
+margin_top = -66.0
+margin_right = 652.0
+margin_bottom = 110.0
+custom_colors/font_color_disabled = Color( 0.870588, 0.0901961, 0.0901961, 1 )
+custom_colors/font_color_focus = Color( 0.843137, 0.0901961, 0.0901961, 1 )
+custom_colors/font_color = Color( 0.823529, 0.0784314, 0.0784314, 1 )
+custom_colors/font_color_hover = Color( 0.898039, 0.101961, 0.101961, 1 )
+custom_colors/font_color_pressed = Color( 0.870588, 0.0980392, 0.0980392, 1 )
 custom_fonts/font = ExtResource( 1 )
 text = "Join Server"
 
 [node name="Username_text_edit" type="LineEdit" parent="Multiplayer_configure"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -428.857
-margin_top = 125.139
-margin_right = 416.143
-margin_bottom = 229.139
+margin_left = -415.0
+margin_top = 141.0
+margin_right = 430.0
+margin_bottom = 245.0
+custom_colors/selection_color = Color( 0.945098, 0.105882, 0.105882, 1 )
+custom_colors/cursor_color = Color( 0.847059, 0.0862745, 0.0862745, 1 )
+custom_colors/clear_button_color_pressed = Color( 0.886275, 0.105882, 0.105882, 1 )
+custom_colors/font_color_selected = Color( 0.901961, 0.0509804, 0.0509804, 1 )
+custom_colors/font_color = Color( 0.839216, 0.670588, 0.670588, 1 )
 custom_fonts/font = ExtResource( 1 )
 align = 1
 placeholder_text = "enter username"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="UI" type="CanvasLayer" parent="."]
 script = ExtResource( 3 )
@@ -65,6 +79,7 @@ margin_left = 27.0
 margin_top = 27.0
 margin_right = 391.0
 margin_bottom = 158.0
+custom_colors/font_color = Color( 0.945098, 0.0666667, 0.0666667, 1 )
 custom_fonts/font = ExtResource( 1 )
 text = "Start Game"
 __meta__ = {
@@ -75,14 +90,16 @@ __meta__ = {
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = -150.0
-margin_right = 0.00012207
+margin_left = 10.0
+margin_top = -298.0
+margin_right = 10.0
+margin_bottom = -148.0
+custom_colors/font_color = Color( 0.968627, 0.0431373, 0.0431373, 1 )
+custom_colors/font_outline_modulate = Color( 0.945098, 0.0745098, 0.0745098, 1 )
+custom_colors/font_color_shadow = Color( 0.92549, 0.0705882, 0.0705882, 1 )
 custom_fonts/font = ExtResource( 1 )
 align = 1
 valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Spawn_locations" type="Node" parent="."]
 
