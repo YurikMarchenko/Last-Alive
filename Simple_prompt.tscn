@@ -42,6 +42,11 @@ margin_left = -257.0
 margin_top = -310.0
 margin_right = 257.0
 margin_bottom = -113.0
+custom_colors/font_color_disabled = Color( 0.870588, 0.109804, 0.109804, 1 )
+custom_colors/font_color_focus = Color( 0.890196, 0.0980392, 0.0980392, 1 )
+custom_colors/font_color = Color( 0.858824, 0.0941176, 0.0941176, 1 )
+custom_colors/font_color_hover = Color( 0.882353, 0.101961, 0.101961, 1 )
+custom_colors/font_color_pressed = Color( 0.929412, 0.0823529, 0.0823529, 1 )
 custom_fonts/font = SubResource( 1 )
 text = "ok"
 
@@ -54,8 +59,12 @@ margin_left = -516.0
 margin_top = -155.5
 margin_right = 516.0
 margin_bottom = -68.5
+custom_colors/font_color = Color( 0.898039, 0.109804, 0.109804, 1 )
+custom_colors/font_outline_modulate = Color( 0.858824, 0.0862745, 0.0862745, 1 )
+custom_colors/font_color_shadow = Color( 0.858824, 0.101961, 0.101961, 1 )
 custom_fonts/font = SubResource( 2 )
 text = "simple prompt"
 align = 1
 valign = 1
+
 [connection signal="pressed" from="Panel/Ok" to="." method="_on_Ok_pressed"]
